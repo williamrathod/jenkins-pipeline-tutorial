@@ -1,6 +1,11 @@
 pipeline {
     agent any 
     stages {
+        stage ('Plan phase'){
+            steps{
+                echo 'Hello This is Jenkins Pipline experiment'
+            }
+        }
         stage('Static Analysis') {
             steps {
                 echo 'Run the static analysis to the code' 
